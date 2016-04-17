@@ -1,0 +1,6 @@
+framework module Pods_Vid_Quiz_Creator {
+  umbrella header "Pods-Vid Quiz Creator-umbrella.h"
+
+  export *
+  module * { export * }
+}
