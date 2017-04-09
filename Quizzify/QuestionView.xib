@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15A279b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="c22-O7-iKe" customClass="QuestionView" customModule="Quizzify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mQ1-jg-ZFQ">
+                    <rect key="frame" x="0.0" y="32" width="378" height="238"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="popover" id="tZf-bc-nfs"/>
+                </imageView>
+                <button id="1hs-gH-zi3">
+                    <rect key="frame" x="193" y="41" width="28" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="done" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="cba-7v-bym">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="done:" target="c22-O7-iKe" id="iZK-Dv-HKb"/>
+                    </connections>
+                </button>
+                <button id="Brj-DR-miT">
+                    <rect key="frame" x="158" y="41" width="28" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="delete" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="YzF-Ls-xV5">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="delete:" target="c22-O7-iKe" id="xfY-jJ-P1f"/>
+                    </connections>
+                </button>
+                <textField wantsLayer="YES" verticalHuggingPriority="750" id="Tv3-w8-GIy">
+                    <rect key="frame" x="20" y="217" width="338" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" usesSingleLineMode="YES" id="ljf-GY-QJE" customClass="CenteredCell" customModule="Quizzify" customModuleProvider="target">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.38493961371372382" green="0.47644884025817363" blue="0.61930854072398189" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="nextKeyView" destination="KU8-p0-cAv" id="EQf-jR-AF8"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="KU8-p0-cAv">
+                    <rect key="frame" x="20" y="182" width="297" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" usesSingleLineMode="YES" id="yNi-K4-Dxu" customClass="CenteredCell" customModule="Quizzify" customModuleProvider="target">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.42111939713507718" green="0.52847096734279786" blue="0.6862580128205128" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="DHS-4k-bs6" id="SeE-Qe-miR"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="DHS-4k-bs6">
+                    <rect key="frame" x="20" y="149" width="297" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="q31-iM-SuN" customClass="CenteredCell" customModule="Quizzify" customModuleProvider="target">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.42111939710000001" green="0.52847096729999998" blue="0.68625801279999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="Log-uJ-PjP" id="BdZ-ax-Ue4"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="Log-uJ-PjP">
+                    <rect key="frame" x="20" y="116" width="297" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" usesSingleLineMode="YES" id="Vgz-Us-mer" customClass="CenteredCell" customModule="Quizzify" customModuleProvider="target">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.42111939710000001" green="0.52847096729999998" blue="0.68625801279999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="1U6-2T-rGH" id="qxC-Cd-XZX"/>
+                    </connections>
+                </textField>
+                <textField verticalHuggingPriority="750" id="1U6-2T-rGH">
+                    <rect key="frame" x="20" y="83" width="297" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" usesSingleLineMode="YES" id="rIe-2c-O5f" customClass="CenteredCell" customModule="Quizzify" customModuleProvider="target">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.42111939710000001" green="0.52847096729999998" blue="0.68625801279999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </textFieldCell>
+                </textField>
+                <customView wantsLayer="YES" id="aAi-P9-0rg" customClass="ClickButton" customModule="Quizzify" customModuleProvider="target">
+                    <rect key="frame" x="325" y="183" width="33" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="state" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="c22-O7-iKe" id="ct0-my-AlT"/>
+                    </connections>
+                </customView>
+                <customView wantsLayer="YES" id="GVI-5G-vSk" customClass="ClickButton" customModule="Quizzify" customModuleProvider="target">
+                    <rect key="frame" x="325" y="151" width="33" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="state" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="c22-O7-iKe" id="jKa-jQ-UOg"/>
+                    </connections>
+                </customView>
+                <customView wantsLayer="YES" id="LP5-MP-Q5t" customClass="ClickButton" customModule="Quizzify" customModuleProvider="target">
+                    <rect key="frame" x="325" y="118" width="33" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="state" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="c22-O7-iKe" id="FGz-i2-Fsh"/>
+                    </connections>
+                </customView>
+                <customView wantsLayer="YES" id="36u-rB-lKc" customClass="ClickButton" customModule="Quizzify" customModuleProvider="target">
+                    <rect key="frame" x="325" y="85" width="33" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="state" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="delegate" destination="c22-O7-iKe" id="XbB-fP-iWQ"/>
+                    </connections>
+                </customView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Hzg-Rg-qJh">
+                    <rect key="frame" x="175" y="14" width="28" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="pin" id="mba-cI-3x5"/>
+                </imageView>
+            </subviews>
+            <connections>
+                <outlet property="answerFourField" destination="1U6-2T-rGH" id="6cX-6G-cgf"/>
+                <outlet property="answerOneField" destination="KU8-p0-cAv" id="NR7-F6-QGV"/>
+                <outlet property="answerThreeField" destination="Log-uJ-PjP" id="XMu-4C-Pgy"/>
+                <outlet property="answerTwoField" destination="DHS-4k-bs6" id="b1v-jB-aLB"/>
+                <outlet property="buttonFour" destination="36u-rB-lKc" id="7KG-AC-Dt8"/>
+                <outlet property="buttonOne" destination="aAi-P9-0rg" id="qqY-IB-9cF"/>
+                <outlet property="buttonThree" destination="LP5-MP-Q5t" id="Vm9-Se-aLt"/>
+                <outlet property="buttonTwo" destination="GVI-5G-vSk" id="CCa-EV-BHd"/>
+                <outlet property="deleteButton" destination="YzF-Ls-xV5" id="LDY-bS-x8S"/>
+                <outlet property="doneButton" destination="cba-7v-bym" id="vWI-kY-KRj"/>
+                <outlet property="pinView" destination="Hzg-Rg-qJh" id="dME-F1-7RC"/>
+                <outlet property="questionField" destination="Tv3-w8-GIy" id="dob-Wv-ZkY"/>
+            </connections>
+            <point key="canvasLocation" x="412" y="359"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="delete" width="31" height="31"/>
+        <image name="done" width="30" height="30"/>
+        <image name="pin" width="28" height="20"/>
+        <image name="popover" width="378" height="239"/>
+    </resources>
+</document>
